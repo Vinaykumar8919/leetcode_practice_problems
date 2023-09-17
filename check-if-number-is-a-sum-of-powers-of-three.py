@@ -15,4 +15,18 @@ class Solution:
             
 
             
+class Solution:
+    def checkPowersOfThree(self, n: int) -> bool:
+        for i in range(15, -1, -1):
+            ThreePowerI = pow(3, i)
+            if n-ThreePowerI>=0:
+                n=n-ThreePowerI
+            if n==0:
+                return True
+        return False
+        
+            
+
+            
+
 
